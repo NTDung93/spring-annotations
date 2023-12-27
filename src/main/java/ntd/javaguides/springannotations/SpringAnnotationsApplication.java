@@ -17,17 +17,6 @@ public class SpringAnnotationsApplication {
 
 	public static void main(String[] args) {
 		var context = SpringApplication.run(SpringAnnotationsApplication.class, args);
-		ValueAnnotation valueAnnotation = context.getBean(ValueAnnotation.class);
-		System.out.println(valueAnnotation.getDefaultName());
-		System.out.println(valueAnnotation.getAccount());
-		System.out.println(valueAnnotation.getPassword());
-
-		PropertySourceDemo propertySourceDemo = context.getBean(PropertySourceDemo.class);
-		System.out.println(propertySourceDemo.getHost());
-		System.out.println(propertySourceDemo.getGmail());
-		System.out.println(propertySourceDemo.getPassword());
-		System.out.println(propertySourceDemo.getAppName());
-		System.out.println(propertySourceDemo.getAppDescription());
 	}
 
 }
